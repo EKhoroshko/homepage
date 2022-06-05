@@ -5,6 +5,10 @@
   box-sizing: border-box;
 }
 
+li {
+  list-style: none;
+}
+
 body {
   font-family: Arial, Helvetica, sans-serif;
   line-height: 1.5;
@@ -26,7 +30,7 @@ body {
 .fh {
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
+  justify-content: space-around;
 }
 
 .fv {
@@ -66,6 +70,10 @@ body {
   .experiences {
     margin-right: 0;
   }
+
+  .skills {
+    flex-direction: column;
+  }
 }
 
 /*Contact info styles*/
@@ -90,7 +98,6 @@ body {
 .contact-info__block {
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
 }
 
 .contact-info__block--center {
@@ -126,11 +133,22 @@ body {
 
 .contact-info__avatar {
   border-radius: 50%;
-  width: 100px;
-  height: 100px;
+  width: 250px;
+  height: 250px;
   object-fit: cover;
   border: 3px solid;
   border-color: var(--text-decoration-color);
+}
+
+.contact-info__wrapper {
+  display: flex;
+  align-items: center;
+}
+
+.contact-info-icon {
+  width: 20px;
+  height: 20px;
+  fill: var(--secondary-text-color);
 }
 
 /*Intro and skills styles*/
@@ -170,6 +188,27 @@ body {
 .skills__text {
   color: var(--secondary-text-color);
   text-align: justify;
+}
+
+.skills {
+  display: flex;
+  justify-content: space-around;
+}
+
+.skills-list {
+  margin-bottom: 20px;
+}
+
+.skills-list__item {
+  margin-top: 10px;
+  display: flex;
+  align-items: center;
+}
+
+.skills-list__icon {
+  width: 30px;
+  height: 30px;
+  margin-right: 10px;
 }
 
 /*Experience and additonal info styles*/
@@ -223,6 +262,10 @@ body {
   padding-left: 20px;
 }
 
+.experiences-result {
+  margin-top: 10px;
+}
+
 .additional-info {
   flex: 1 1 40%;
 }
@@ -247,7 +290,7 @@ body {
 .additional-info__education-university-speciality {
   color: var(--primary-text-color);
   text-align: left;
-  margin-bottom: 10px;
+  margin-bottom: 15px;
 }
 
 .additional-info__education-university-name {
@@ -266,4 +309,25 @@ body {
 
 .additional-info__languages-item {
   color: var(--secondary-text-color);
+}
+
+/*style for project*/
+
+.project-tittle {
+  margin-bottom: 15px;
+}
+
+.project-list__item {
+  margin-bottom: 15px;
+}
+
+.project-list__link {
+  color: var(--secondary-text-color);
+  text-decoration: none;
+  border-bottom: 1px solid var(--text-decoration-color);
+  cursor: pointer;
+}
+
+.project-list__description {
+  margin-top: 10px;
 }
