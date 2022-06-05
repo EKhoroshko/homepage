@@ -63,6 +63,14 @@ body {
     align-items: center;
   }
 
+  .contact-info__wrapper {
+    margin-bottom: 20px;
+  }
+
+  .contact-info__wrapper:last-child {
+    margin-bottom: 0;
+  }
+
   .contact-info__block:not(:last-child) {
     margin-bottom: 20px;
   }
@@ -98,6 +106,7 @@ body {
 .contact-info__block {
   display: flex;
   flex-direction: column;
+  justify-content: space-evenly;
 }
 
 .contact-info__block--center {
@@ -109,6 +118,7 @@ body {
   text-decoration: none;
   display: flex;
   justify-content: start;
+  align-items: center;
   transition: cubic-bezier(0.075, 0.82, 0.165, 1);
 }
 
@@ -143,11 +153,6 @@ body {
   object-fit: cover;
   border: 3px solid;
   border-color: var(--text-decoration-color);
-}
-
-.contact-info__wrapper {
-  display: flex;
-  align-items: center;
 }
 
 .contact-info-icon {
@@ -345,7 +350,7 @@ body {
 
 @keyframes rotate {
   0% {
-    transform: rotateZ(10deg);
+    transform: rotate(10deg);
   }
   25% {
     transform: rotate(-10deg);
