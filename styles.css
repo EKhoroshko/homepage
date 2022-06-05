@@ -79,7 +79,7 @@ body {
     margin-right: 0;
   }
 
-  .skills {
+  .skills-list {
     flex-direction: column;
   }
 }
@@ -200,12 +200,12 @@ body {
   text-align: justify;
 }
 
-.skills {
+.skills-list {
   display: flex;
   justify-content: space-around;
 }
 
-.skills-list {
+.skills-item {
   margin-bottom: 20px;
 }
 
